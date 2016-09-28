@@ -4,3 +4,47 @@
   3. author styles: styles des Entwicklers der Website
   
   Nun sind diese Styles nicht alle gleichwertig. Die grösste Wichtigkeit haben die author styles, dann user styles, dann author styles*/
+
+p
+{
+  background-color:Green;
+}
+
+p /*Grau gewinnt und die Paragraphen sind grau*/
+{
+  background-color:Gray;
+}
+
+@import url("styles2.css");/*Hat keinen Einfluss. @import wird behandelt, wie wenn es am Anfang eingefügt würde. Da später weitere Paragraph Styles kommen, gewinnen diese.*/
+
+
+/*********************************** Specificity ***************************************
+A: Anzahl type selectors 
+B: Anzahl class und attribute selectors
+C: Anzahl ID selectors
+*/
+
+body > div /*Specificity: A = 0, B = 0, C = 1 --> 2!! Rot gewinnt*/
+{
+  background-color:red;
+}
+
+div /*Specificity: A = 0, B = 0, C = 1 --> 1*/
+{
+  background-color:black;
+}
+
+div p /*Specificity: A = 0, B = 0, C = 1 --> 1*/
+{
+  background-color:brown;
+}
+
+* /*Specificity: A = 0, B = 0, C = 0 --> 0*/
+{
+  background-color:green;
+}
+
+#content
+{
+  background-color: fuchsia
+}

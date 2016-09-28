@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>A simple page</title>
-  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css"> <!--die Reihenfolge von Stylesheets ist wichtig. Der unterste Style gewinnt, angenommen mehrere Stylesheets werden angefügt.-->
 </head>
 <body>
   <h1>Heading 1</h1>
@@ -12,7 +12,7 @@
   <div>A div</div>
   <p>A paragraph</p>
   <div>
-    <p>A paragraph inside a div</p>
+    <p id="content">A paragraph inside a div</p>
   </div>
   <a href="page.html">Refresh</a>
 </body>
