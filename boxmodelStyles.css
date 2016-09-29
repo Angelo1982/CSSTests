@@ -1,0 +1,21 @@
+
+*
+{/*resets die user-agentstyles*/
+  padding:0px;
+  margin:0px;
+}
+
+
+ul
+{
+  background-color:#cccccc;
+}
+
+
+ul li:nth-child(3) /*startet bei 1, nicht 0*/
+{
+  background-color:#cccc99; /*Färbt die Box ein*/
+  padding:10px; /*Stellt man sich vor, dass jedes Element von einer Box umgeben ist, schiebt das padding den Inhalt von den Boxrändern aus nach innnen.*/
+  margin:20px; /*Schiebt alles von der Box weg. Auch den Punkt der unordered list*/
+  list-style:none; /*keine Punkte in der ul*/
+}
