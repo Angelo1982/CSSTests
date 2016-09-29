@@ -31,6 +31,7 @@ body > div /*Specificity: A = 0, B = 0, C = 1 --> 2!! Rot gewinnt*/
 
 div /*Specificity: A = 0, B = 0, C = 1 --> 1*/
 {
+  font-size:30px;
   background-color:black;
 }
 
@@ -46,5 +47,5 @@ div p /*Specificity: A = 0, B = 0, C = 1 --> 1*/
 
 #content
 {
-  background-color: fuchsia
+  background-color:fuchsia
 }
